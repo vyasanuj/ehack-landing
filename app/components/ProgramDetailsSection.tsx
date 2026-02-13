@@ -54,9 +54,67 @@ const rows = [
     { label: "Global Certification", key: "certifications" },
 ];
 
+const Modal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
+    if (!isOpen) return null;
+
+    return (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+            <div
+                className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+                onClick={onClose}
+            ></div>
+            <div className="bg-white rounded-3xl p-8 max-w-md w-full relative z-10 shadow-2xl animate-in fade-in zoom-in duration-300">
+                <button
+                    onClick={onClose}
+                    className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors"
+                >
+                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div className="text-center mb-8">
+                    <h3 className="text-2xl font-black text-[#1f2937] mb-2">Enquire Now</h3>
+                    <p className="text-gray-500 text-sm">Get detailed counseling for your career path.</p>
+                </div>
+
+                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); onClose(); }}>
+                    <div>
+                        <input
+                            type="text"
+                            placeholder="Full Name"
+                            className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 outline-none focus:border-[#ff6b00] focus:ring-2 focus:ring-[#ff6b00]/10 transition-all font-medium text-[#1f2937]"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            type="email"
+                            placeholder="Email Address *"
+                            required
+                            className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 outline-none focus:border-[#ff6b00] focus:ring-2 focus:ring-[#ff6b00]/10 transition-all font-medium text-[#1f2937]"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            type="tel"
+                            placeholder="Phone Number *"
+                            required
+                            className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 outline-none focus:border-[#ff6b00] focus:ring-2 focus:ring-[#ff6b00]/10 transition-all font-medium text-[#1f2937]"
+                        />
+                    </div>
+                    <button className="w-full bg-[#ff6b00] text-white rounded-xl py-4 font-bold shadow-lg shadow-[#ff6b00]/20 hover:bg-[#e66000] hover:shadow-xl hover:shadow-[#ff6b00]/30 transition-all transform hover:-translate-y-0.5">
+                        Submit Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    );
+};
+
 export default function ProgramDetailsSection() {
     const sectionRef = useRef<HTMLElement>(null);
     const tableRef = useRef<HTMLDivElement>(null);
+    const [isModalOpen, setIsModalOpen] = React.useState(false);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -76,7 +134,7 @@ export default function ProgramDetailsSection() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-20 bg-white relative overflow-hidden">
+        <section ref={sectionRef} className="py-10 bg-white relative overflow-hidden">
             <div className="container mx-auto px-4 max-w-6xl relative z-10">
                 <div className="text-center mb-12">
                     <span className="text-[#ff6b00] font-bold tracking-widest uppercase mb-4 text-sm md:text-base block">
@@ -187,6 +245,23 @@ export default function ProgramDetailsSection() {
                         </p>
                     </div>
                 </div>
+
+                <div className="mt-12 text-center">
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="inline-flex items-center gap-3 bg-[#ff6b00] text-white px-10 py-5 rounded-2xl font-black text-lg shadow-xl shadow-[#ff6b00]/20 hover:bg-[#e66000] hover:scale-105 transition-all group"
+                    >
+                        ENQUIRE NOW
+                        <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                    <p className="mt-4 text-gray-500 text-sm font-medium">
+                        Speak to our career counselors starting at <span className="text-[#1f2937] font-bold">₹0</span>
+                    </p>
+                </div>
+
+                <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
         </section>
     );

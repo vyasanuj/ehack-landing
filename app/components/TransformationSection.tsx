@@ -10,34 +10,34 @@ const placementStories = [
     {
         id: 1,
         name: "Anmol Gupta",
-        image: "/images/testimonials/person1.jpg",
+        image: "/testimonials/person1.jpg",
         before: { role: "B.Tech Student", company: "Fresher" },
-        after: { role: "APV-DELIVERY", company: "Ampcuscyber", logo: "/images/ampcuscyber.png" },
-        hike: "400%",
+        after: { role: "APV-DELIVERY", company: "Ampcus Cyber", logo: "/images/ampcuscyber.png" },
+        hike: "Start",
         program: "Masters Program"
     },
     {
         id: 2,
-        name: "Rajiv Govind",
-        image: "/images/testimonials/person2.jpg",
-        before: { role: "System Admin", company: "Local IT Firm" },
-        after: { role: "Head Teaching Assistant", company: "GTL", logo: "/images/gtlogo.jpg" },
-        hike: "140%",
-        program: "Graduate Program"
+        name: "Rohit Prasad",
+        image: "/testimonials/person8.jpg",
+        before: { role: "IT Manager", company: "Mid-size Firm" },
+        after: { role: "Advisor", company: "Fiserv", logo: "/images/fiserv.png" },
+        hike: "200%",
+        program: "Masters Program"
     },
     {
         id: 3,
-        name: "Vaddi . Paneendar",
-        image: "/images/testimonials/person3.jpg",
-        before: { role: "Support Engineer", company: "Tech Support" },
-        after: { role: "Red Teamer", company: "SISA", logo: "/images/sisa.webp" },
-        hike: "300%",
-        program: "Masters Program"
+        name: "Snigdha Suresh Poonghat",
+        image: "/testimonials/person7.jpg",
+        before: { role: "IT Support", company: "Tech Support" },
+        after: { role: "Technical Support Engineer", company: "ASK4", logo: "/images/ask4_limited_logo.jpg" },
+        hike: "150%",
+        program: "Graduate Program"
     },
     {
         id: 4,
         name: "Damini Ranganath",
-        image: "/images/testimonials/person4.jpg",
+        image: "/testimonials/person4.jpg",
         before: { role: "Software Dev", company: "Startup" },
         after: { role: "Cybersecurity Engineer", company: "Anuvu", logo: "/images/anuvu.png" },
         hike: "120%",
@@ -45,37 +45,37 @@ const placementStories = [
     },
     {
         id: 5,
+        name: "Vaddi . Paneendar",
+        image: "/testimonials/person3.jpg",
+        before: { role: "Support Engineer", company: "Tech Support" },
+        after: { role: "Red Teamer", company: "SISA", logo: "/images/sisa.webp" },
+        hike: "300%",
+        program: "Masters Program"
+    },
+    {
+        id: 6,
+        name: "Rajiv Govind",
+        image: "/testimonials/person2.jpg",
+        before: { role: "System Admin", company: "Local IT Firm" },
+        after: { role: "Head Teaching Assistant", company: "GT Compution", logo: "/images/gtlogo.jpg" },
+        hike: "140%",
+        program: "Graduate Program"
+    },
+    {
+        id: 7,
         name: "Pranshu Tiwari",
-        image: "/images/testimonials/person5.jpg",
+        image: "/testimonials/person5.jpg",
         before: { role: "Network Admin", company: "ISP" },
-        after: { role: "Director Security Services", company: "Ampcuscyber", logo: "/images/ampcuscyber.png" },
+        after: { role: "Director Security Services", company: "Ampcus Cyber", logo: "/images/ampcuscyber.png" },
         hike: "160%",
         program: "Elite Program"
     },
     {
-        id: 6,
+        id: 8,
         name: "Abhinav Choubey",
-        image: "/images/testimonials/person6.jpg",
+        image: "/testimonials/person6.jpg",
         before: { role: "IT Manager", company: "Mid-size Firm" },
         after: { role: "Associate Director", company: "SISA", logo: "/images/sisa.webp" },
-        hike: "200%",
-        program: "Masters Program"
-    },
-    {
-        id: 7,
-        name: "Snigdha सुरेश",
-        image: "/images/testimonials/person7.jpg",
-        before: { role: "IT Manager", company: "Mid-size Firm" },
-        after: { role: "Technical Support Engineer", company: "ASK4", logo: "/images/ask4_limited_logo.jpg" },
-        hike: "200%",
-        program: "Graduate Program"
-    },
-    {
-        id: 8,
-        name: "Rohit Prasad",
-        image: "/images/testimonials/person8.jpg",
-        before: { role: "IT Manager", company: "Mid-size Firm" },
-        after: { role: "Advisor", company: "Fiserv", logo: "/images/fiserv.png" },
         hike: "200%",
         program: "Masters Program"
     }
