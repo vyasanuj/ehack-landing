@@ -56,7 +56,7 @@ export default function CTASection() {
     }, []);
 
     return (
-        <section ref={containerRef} className="py-20 md:py-32 bg-white relative overflow-hidden border-t border-gray-100">
+        <section ref={containerRef} className="py-12 md:py-20 bg-white relative overflow-hidden border-t border-gray-100">
             {/* Architectural Blueprint Background */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.04] blueprint-pattern">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -97,24 +97,14 @@ export default function CTASection() {
                             </p>
                         </div>
 
-                        <div className="cta-text-reveal space-y-6 pt-4">
-                            <div className="flex items-center gap-4 group">
-                                <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center border border-gray-100 transition-colors group-hover:border-[#ff6b00]/30">
-                                    <svg className="w-6 h-6 text-[#ff6b00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                </div>
-                                <div>
-                                    <h4 className="text-[#1f2937] font-black uppercase text-xs tracking-widest">Architectural Labs</h4>
-                                    <p className="text-gray-500 text-sm">Real-world simulations for true mastery.</p>
-                                </div>
+                        <div className="cta-text-reveal space-y-8 pt-4">
+                            <div className="flex flex-col gap-2 group">
+                                <h4 className="text-[#1f2937] font-black uppercase text-sm tracking-widest border-l-4 border-[#ff6b00] pl-4">Work on Live Projects</h4>
+                                <p className="text-gray-500 text-base pl-5">Gain hands-on experience with real-world scenarios and labs.</p>
                             </div>
-                            <div className="flex items-center gap-4 group">
-                                <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center border border-gray-100 transition-colors group-hover:border-[#ff6b00]/30">
-                                    <svg className="w-6 h-6 text-[#ff6b00]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                                </div>
-                                <div>
-                                    <h4 className="text-[#1f2937] font-black uppercase text-xs tracking-widest">Accelerated Growth</h4>
-                                    <p className="text-gray-500 text-sm">Designed for 400% career velocity.</p>
-                                </div>
+                            <div className="flex flex-col gap-2 group">
+                                <h4 className="text-[#1f2937] font-black uppercase text-sm tracking-widest border-l-4 border-[#ff6b00] pl-4">Get Hired Faster</h4>
+                                <p className="text-gray-500 text-base pl-5">Our placement team works with you until you land your first job.</p>
                             </div>
                         </div>
                     </div>

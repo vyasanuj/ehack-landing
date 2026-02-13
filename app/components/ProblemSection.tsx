@@ -134,7 +134,7 @@ const ProblemSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     {/* Problem 1: Tutorial Hell */}
-                    <div ref={addToRefs} className="bg-white border border-gray-300 rounded-2xl p-8 hover:border-[#ff6b00] transition-all duration-300 group shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <div ref={addToRefs} className="bg-white border border-[#ff6b00] rounded-2xl p-8 transition-all duration-300 group shadow-lg hover:shadow-xl hover:-translate-y-1">
                         <div className="h-48 bg-gray-900 rounded-xl mb-6 overflow-hidden relative border border-gray-800 shadow-inner flex flex-col">
                             {/* Browser Header */}
                             <div className="absolute top-0 left-0 w-full h-8 bg-gray-800 flex items-center px-3 gap-2 z-10 border-b border-gray-700">
@@ -198,7 +198,7 @@ const ProblemSection = () => {
                     </div>
 
                     {/* Problem 2: Theory Over Practice */}
-                    <div ref={addToRefs} className="bg-white border border-gray-300 rounded-2xl p-8 hover:border-[#ff6b00] transition-all duration-300 group shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <div ref={addToRefs} className="bg-white border border-[#ff6b00] rounded-2xl p-8 transition-all duration-300 group shadow-lg hover:shadow-xl hover:-translate-y-1">
                         <div className="h-48 bg-gray-50 rounded-xl mb-6 relative border border-gray-100 shadow-inner overflow-hidden flex flex-col items-center justify-center p-4">
                             {/* Book Container */}
                             <div className="book-container relative w-32 h-40 perspective-[1000px] -mt-5">
@@ -244,7 +244,7 @@ const ProblemSection = () => {
                     </div>
 
                     {/* Problem 3: Zero Career Guidance */}
-                    <div ref={addToRefs} className="bg-white border border-gray-300 rounded-2xl p-8 hover:border-[#ff6b00] transition-all duration-300 group shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <div ref={addToRefs} className="bg-white border border-[#ff6b00] rounded-2xl p-8 transition-all duration-300 group shadow-lg hover:shadow-xl hover:-translate-y-1">
                         <div className="h-48 bg-gray-50 rounded-xl mb-6 relative overflow-hidden border border-gray-100 shadow-inner flex justify-center">
                             {/* Trash Can */}
                             <div className="absolute bottom-4 w-16 h-20 border-2 border-gray-400 rounded-b-lg border-t-0 flex justify-center items-end pb-2 z-10 bg-gray-100">
@@ -273,7 +273,7 @@ const ProblemSection = () => {
                     </div>
 
                     {/* Problem 4: No Valid Certification */}
-                    <div ref={addToRefs} className="bg-white border border-gray-300 rounded-2xl p-8 hover:border-[#ff6b00] transition-all duration-300 group lg:col-start-1 lg:justify-self-end shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <div ref={addToRefs} className="bg-white border border-[#ff6b00] rounded-2xl p-8 transition-all duration-300 group lg:col-start-1 lg:justify-self-end shadow-lg hover:shadow-xl hover:-translate-y-1">
                         <div className="h-48 bg-gray-50 rounded-xl mb-6 relative flex items-center justify-center border border-gray-100 overflow-hidden shadow-inner">
                             {/* Certificate */}
                             <div className="relative w-32 h-24 bg-[#fffaeb] rounded border-4 border-[#92400e] flex flex-col items-center justify-center p-2 shadow-lg">
@@ -296,7 +296,7 @@ const ProblemSection = () => {
                     </div>
 
                     {/* Problem 5: Unguided Path */}
-                    <div ref={addToRefs} className="bg-white border border-gray-300 rounded-2xl p-8 hover:border-[#ff6b00] transition-all duration-300 group lg:col-start-2 lg:justify-self-start lg:col-span-2 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <div ref={addToRefs} className="bg-white border border-[#ff6b00] rounded-2xl p-8 transition-all duration-300 group lg:col-start-2 lg:justify-self-start lg:col-span-2 shadow-lg hover:shadow-xl hover:-translate-y-1">
                         <div className="h-48 bg-gray-50 rounded-xl mb-6 relative border border-gray-100 overflow-hidden flex items-center justify-center shadow-inner">
                             {/* Chaos Path SVG */}
                             <svg className="w-full h-full absolute inset-0 text-red-500 pointer-events-none opacity-30" viewBox="0 0 300 200">

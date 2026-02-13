@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import ProblemSection from "./components/ProblemSection";
 import SolutionSection from "./components/SolutionSection";
 import TransformationSection from "./components/TransformationSection";
+import ProgramDetailsSection from "./components/ProgramDetailsSection";
 import CTASection from "./components/CTASection";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <ProblemSection />
             <SolutionSection />
             <TransformationSection />
+            <ProgramDetailsSection />
             <CTASection />
         </main>
     );
